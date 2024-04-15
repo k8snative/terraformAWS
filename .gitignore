@@ -1,0 +1,12 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+terraform.tfstate.backup
+terraform.tfstate.backup.*
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore provider credentials or configuration files
+terraform.rc
+*.csv
