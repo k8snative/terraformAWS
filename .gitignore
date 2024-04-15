@@ -10,3 +10,4 @@ terraform.tfstate.backup.*
 # Ignore provider credentials or configuration files
 terraform.rc
 *.csv
+.tfplan
