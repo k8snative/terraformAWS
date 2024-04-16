@@ -37,3 +37,8 @@ variable "private_subnet3_cidr" {
   description = "Enter Private Subnet 3"
   default = "192.168.12.0/24"
 }
+
+variable "environment_name" {
+  description = "Enter environment name"
+  default = "qa"
+}
