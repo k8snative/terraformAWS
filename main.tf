@@ -20,3 +20,15 @@ module "ecr" {
   source = "./modules/ecr"
   environment_name = var.environment_name
 }
+
+terraform {
+  backend "s3" {
+    bucket = "my-terraformstate"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+    encrypt        = false
+    profile = "my-profile"
+   
+  }
+  
+}
